@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git checkout'){
+            steps{
+                git credentialsId: 'c4b0a3e3-61e7-4949-ab7c-e3cb2745bf25', url: 'https://github.com/javahometech/myweb'
+            }
+        }
+    }
+}
